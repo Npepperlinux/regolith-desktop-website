@@ -12,7 +12,7 @@ Regolithバージョン3.0ではXresourceキーが"i3-wm"から"wm"に置き換�
 
 | `Xresources`キー                                   | 概要                                                                                                         |
 | -------------------------------------------------- | ------------------------------------------------------------------- |
-| gtk.theme_name                                     | GTKテーマ（"Legacy Applications" in `gnome-tweaks`） |
+| gtk.theme_name                                     | GTKテーマ（`gnome-tweaks`の「レガシーアプリケーション」） |
 | gtk.icon_theme_name                                | GTKアイコンテーマ  |
 | gnome.terminal.audible-bell                        | gnome-terminalのベルを有効にする（`true / false`）                       |
 | gtk.document_font_name                             | GTKドキュメントのフォント名 |
