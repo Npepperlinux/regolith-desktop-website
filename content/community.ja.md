@@ -1,5 +1,5 @@
 ---
-title: "Community"
+title: "コミュニティ"
 ---
 
 ## お知らせ
@@ -17,10 +17,10 @@ title: "Community"
 <br />
 <a href="https://opencollective.com/regolith/donate" target="_blank" rel="noreferrer"><img class="not-prose" src='https://badgen.net/opencollective/backers/regolith'/></a>
 
-* Become a financial [contributor] and help us sustain our community
+* [出資者]となりコミュニティの維持に貢献する
 
 ## 開発
 
 * [Regolith GitHub org](https://github.com/regolith-linux)で開発が行われています。
 
-[contributor]: https://opencollective.com/regolith/contribute
+[出資者]: https://opencollective.com/regolith/contribute

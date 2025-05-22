@@ -1,20 +1,19 @@
 ---
-title: "Compatibility Matrix"
-linkTitle: "Compatibility"
+title: "互換性一覧"
+linkTitle: "互換性"
 weight: 1
 description: >
-  Compatibility Matrix
+  互換性一覧
 prev: /docs/getting-started
 next: /docs/using-regolith
 ---
 
-Regolith supports and can be installed in various Debian and Ubuntu distros.
-Check the compatibility matrix below to find out which Regolith version is 
-supported on which OS distributions.
+RegolithはさまざまなDebianとUbuntuディストロをサポートしておりインストールできます。
+各RegolithバージョンがどのOSディストリビューションをサポートしているのか調べるには互換性一覧を確認してください。
 
 ## Ubuntu
 
-| Distro Name / Regolith Version  |  v2.2  |  v3.0  |  v3.1  |  v3.2  |
+| ディストロ名 / Regolithバージョン  |  v2.2  |  v3.0  |  v3.1  |  v3.2  |
 |:--------------------------------|:------:|:------:|:------:|:------:|
 | Focal (20.04 LTS) | {{< icon name="check" attributes="height=21" >}} | {{< icon name="check" attributes="height=21" >}} | {{< icon name="check" attributes="height=21" >}} | - |
 | Jammy (22.04 LTS) | {{< icon name="check" attributes="height=21" >}} | {{< icon name="check" attributes="height=21" >}} | {{< icon name="check" attributes="height=21" >}} | {{< icon name="check" attributes="height=21" >}} |
@@ -25,7 +24,7 @@ supported on which OS distributions.
 
 ## Debian
 
-| Distro Name / Regolith Version  |  v2.2  |  v3.0  |  v3.1  |  v3.2  |
+| ディストロ名 / Regolithバージョン  |  v2.2  |  v3.0  |  v3.1  |  v3.2  |
 |:--------------------------------|:------:|:------:|:------:|:------:|
 | Bullseye (11) | {{< icon name="check" attributes="height=21" >}} | {{< icon name="check" attributes="height=21" >}} | {{< icon name="check" attributes="height=21" >}} | - |
 | Bookworm (12) | - | {{< icon name="check" attributes="height=21" >}} | {{< icon name="check" attributes="height=21" >}} | {{< icon name="check" attributes="height=21" >}} |

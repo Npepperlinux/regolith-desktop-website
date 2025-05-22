@@ -11,9 +11,9 @@ next: /docs/reference/keybindings
 このセクションには、Regolithを使用するのに役立つ参考資料が含まれています。
 
 {{< cards >}}
-  {{< card link="keybindings/" title="Keybindings" >}}
-  {{< card link="configurations/" title="Config Files" >}}
+  {{< card link="keybindings/" title="キーバインド" >}}
+  {{< card link="configurations/" title="設定ファイル" >}}
   {{< card link="i3xrocks/" title="i3xrocks" >}}
   {{< card link="xresources/" title="Xresources" >}}
-  {{< card link="releases/" title="Release Notes" >}}
+  {{< card link="releases/" title="リリースノート" >}}
 {{< /cards >}}

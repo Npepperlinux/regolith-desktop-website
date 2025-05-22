@@ -147,11 +147,11 @@ ARMベースのシステムにインストールするときは、上記の内�
 
 ## インストール時に選択するパッケージ
 
-Regolith 3.0では、複数のセッション(X11: `regolith-session-flashback`, Wayland: `regolith-session-sway`)から選択することができるようになりました。このため、Regolith 3.0をインストールするときは、使用するセッションを一方か両方を指定します。さらに、Regolith 3.0からはインストール時にRegolithの外観を指定できるようになったことで、後で設定する必要があるセットアップが節約されます。DebianベースのシステムのX11で推奨される基本的なインストールは以下の通りです。
+Regolith 3.0では、複数のセッション(X11: `regolith-session-flashback`, Wayland: `regolith-session-sway`)から選択することができるようになりました。このため、Regolith 3.2をインストールするときは、使用するセッションを一方か両方を指定します。さらに、現在ではインストール時にRegolithの外観を指定できるようになったことで、後で設定する必要があるセットアップが節約されます。DebianベースのシステムのX11で推奨される基本的なインストールは以下の通りです。
 
 ```bash
 sudo apt install regolith-desktop regolith-session-flashback regolith-look-lascaille
-#                ^-- ﾍﾞｰｽ ﾊﾟｯｹｰｼﾞ   ^-- ｾｯｼｮﾝ                   ^ -- 外観 
+#                ^-- ﾍﾞｰｽ ﾊﾟｯｹｰｼﾞ  ^-- ｾｯｼｮﾝ                   ^ -- 外観 
 ```
 
 * セッションについて、次の内の一方か両方を選ぶことができます：`regolith-session-flashback` (X11), `regolith-session-sway` (Wayland)
@@ -178,14 +178,14 @@ regolith-look-solarized-dark
 sudo apt install regolith-desktop regolith-session-sway regolith-look-nord
 ```
 
-## Anatomy of the Regolith `apt` Config Line
+## Regolith `apt` 設定行の構造
 
 ```text
 deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/unstable noble main
           |                                           |      |        |     |
-          |                                           |      |        |     * Repo Component
+          |                                           |      |        |     * リポジトリコンポーネント
           |                                           |      |        * ディストロバージョン/コードネーム
-          |                                           |      * Repo Suite
+          |                                           |      * リポジトリスイート
           |                                           * ディストロ名
           * アーキテクチャ
 ```
@@ -204,9 +204,9 @@ deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/unstable noble main
 | `ubuntu` | Ubuntu Linuxディストリビューション |
 | `debian` | Debian Linuxディストリビューション |
 
-### Repo Suites and Components
+### リポジトリスイートとコンポーネント
 
-| Regolith 段階 | Repo Suite | Repo Component | 概要 |
+| Regolith 段階 | リポジトリスイート | リポジトリコンポーネント | 概要 |
 |:-------------|------------|:--------------:|:-----|
 | 実験的 | `experimental` | `main` | 実験的内容をテストする段階 |
 | 不安定 | `unstable` | `main` | 開発内容の初期テスト段階 |
@@ -221,7 +221,7 @@ deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/unstable noble main
 
 ### 例
 
-|概要 | APT Line |
+|概要 | APT行 |
 |:---|:---------|
 | `amd64`のUbuntu 22.04で3.2リリースのRegolithを使用する | `deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/stable jammy v3.2` |
 | `amd64`のDebian 12で最新リリースのRegolithを使用する | `deb [arch=amd64] https://archive.regolith-desktop.com/debian/stable bookworm main` |
@@ -230,8 +230,8 @@ deb [arch=amd64] https://archive.regolith-desktop.com/ubuntu/unstable noble main
 
 ## リリースの変更ポリシー
 
- From Regolith 3.0 to 3.2 (inclusive) Regolith 3.2以降では、すべてのリリースにおいて、パッケージリポジトリのURLに一意の名前が使用されます。これは、ユーザーが、新しいリリースにアップグレードするタイミングを完全に制御できることを意味します。パッケージマネージャーに常に最新版をインストールしてほしいユーザーには、`release-current` という特別な段階が提供されています。
+ Regolith 3.0から3.2までは、すべてのリリースにおいて、パッケージリポジトリのURLに一意の名前が使用されます。これは、ユーザーが、新しいリリースにアップグレードするタイミングを完全に制御できることを意味します。パッケージマネージャーに常に最新版をインストールしてほしいユーザーには、`release-current` という特別な段階が提供されています。
 
-From Regolith 3.3 onward, all releases will be published in the common archive repository separated by a high level distro (e.g. `debian`, `ubuntu`) folder and corresponding codename subfolders. The structure is split furthermore into different suites and components. As such, users wishing to have their package manager always install the latest version, they should use `main` component of `stable` suite. Otherwise a fixed version component (for example `v3.3`, `v3.2`, etc) can be used alongside `stable` component.
+Regolith 3.3以降から、すべてのリリースが高レベルディストロ（`debian`や`ubuntu`など）フォルダで分割された共通アーカイブリポジトリで公開され、サブフォルダがコードネームと一致するようになります。この構成はさらに異なるスイートやコンポーネントで分割されます。この場合、パッケージマネージャーが常に最新版をインストールすることを望むユーザーは、`stable`スイートの`main`コンポーネントを使用する必要があります。一方、修正済みバージョンのコンポーネント（例として、`v3.3`や`v3.2`など）も`stable`コンポーネントのように利用可能です。
 
-Note that `experimental`, `unstable`, and `testing` suites only have `main` component.
+`experimental`や`unstable`、`testing`スイートは`main`コンポーネントのみであることに注意してください。

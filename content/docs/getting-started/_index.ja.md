@@ -1,14 +1,14 @@
 ---
-title: Getting Started
+title: 始める
 weight: 1
 prev: /docs
 next: /docs/getting-started/compatibility
 ---
 
-Explore the following sections to learn more about Regolith:
+下記のセクションからRegolithについて学びたい項目についてお探しください。
 
 {{< cards >}}
-  {{< card link="/docs/using-regolith/" title="Using Regolith" subtitle="Content about how to use the Regolith Desktop" >}}
-  {{< card link="/docs/howtos/" title="How To" subtitle="Some examples of how you can customize Regolith Linux" >}}
-  {{< card link="/docs/reference/" title="Reference" subtitle="Reference material" >}}
+  {{< card link="/docs/using-regolith/" title="Regolithを使用する" subtitle="Regolith Desktopの使い方についてのコンテンツ" >}}
+  {{< card link="/docs/howtos/" title="ハウツー" subtitle="Regolith Linuxをカスタマイズする方法の例" >}}
+  {{< card link="/docs/reference/" title="リファレンス" subtitle="参考資料" >}}
 {{< /cards >}}

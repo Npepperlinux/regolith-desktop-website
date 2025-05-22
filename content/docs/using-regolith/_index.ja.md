@@ -8,11 +8,11 @@ prev: /docs/getting-started/compatibility
 next: /docs/using-regolith/install
 ---
 
-Explore the following sections to learn how to use Regolith:
+下記のセクションからRegolithの使い方について学びたい項目をお探しください。
 
 {{< cards >}}
-  {{< card link="install/" title="Install" >}}
-  {{< card link="first-launch/" title="First Launch" >}}
-  {{< card link="basics/" title="Basic Usage" >}}
-  {{< card link="configuration/" title="Configuration" >}}
+  {{< card link="install/" title="インストール" >}}
+  {{< card link="first-launch/" title="初回起動" >}}
+  {{< card link="basics/" title="基本的な使い方" >}}
+  {{< card link="configuration/" title="設定" >}}
 {{< /cards >}}
